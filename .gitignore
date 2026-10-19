@@ -1,11 +1,11 @@
-# Terraform working files
+
 .terraform/
 *.tfstate
 *.tfstate.*
 crash.log
 *.tfplan
 
-# Your real variable values (keep only the .example file)
+
 terraform.tfvars
 *.auto.tfvars
 
