@@ -1,0 +1,15 @@
+# Terraform working files
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+*.tfplan
+
+# Your real variable values (keep only the .example file)
+terraform.tfvars
+*.auto.tfvars
+
+# SSH keys, just in case
+*.pem
+id_rsa
+id_rsa.pub
