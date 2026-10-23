@@ -1,4 +1,4 @@
-#  Subnet
+
 resource "azurerm_subnet" "bastion_host" {
   name                 = "${var.prefix}-bastion-host-subnet"
   resource_group_name  = azurerm_resource_group.rg.name
@@ -6,7 +6,7 @@ resource "azurerm_subnet" "bastion_host" {
   address_prefixes     = var.bastion_host_subnet_cidr
 }
 
-#Bastion NSG 
+
 resource "azurerm_network_security_group" "bastion_host" {
   name                = "${var.prefix}-bastion-nsg"
   location            = azurerm_resource_group.rg.location
@@ -41,7 +41,7 @@ resource "azurerm_public_ip" "bastion_host" {
   tags                = var.tags
 }
 
-# NIC 
+
 resource "azurerm_network_interface" "bastion_vm1" {
   name                = "${var.prefix}-bastion-vm1-nic"
   location            = azurerm_resource_group.rg.location
